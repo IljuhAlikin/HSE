@@ -343,7 +343,7 @@ html {
   justify-content: space-between;
   gap: 18px;
   overflow-x: auto;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .item-programms__content::-webkit-scrollbar {
@@ -369,7 +369,7 @@ html {
 .item-programms {
   border-radius: 5px;
   background: #FFF;
-  padding: 26px 25px 40px 23px;
+  padding: 26px 25px 20px 23px;
 }
 
 .item-programms__title_main {
