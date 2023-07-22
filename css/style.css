@@ -378,7 +378,7 @@ html {
 
 .item-programms__card {
   display: flex;
-  flex: 0 0 auto;
+  flex: 1 0 auto;
   align-items: center;
   gap: 10px;
   border-radius: 5px;
@@ -671,6 +671,10 @@ html {
   display: block;
   color: #000;
   margin-bottom: 5px;
+}
+
+.table__data a {
+  color: #2F2F2F;
 }
 
 @media (max-width: 991.98px) {
