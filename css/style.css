@@ -137,6 +137,7 @@ html {
 .table-wrapper {
   width: 100%;
   overflow-x: auto;
+  overflow-y: hidden;
   height: -moz-fit-content;
   height: fit-content;
   -webkit-overflow-scrolling: touch;
@@ -342,6 +343,7 @@ html {
   justify-content: space-between;
   gap: 18px;
   overflow-x: auto;
+  padding-bottom: 49px;
 }
 
 .item-programms__content::-webkit-scrollbar {
@@ -358,6 +360,10 @@ html {
   background: #BACEF2;
   border-top: 2px solid #f5f5f5;
   border-bottom: 2px solid #f5f5f5;
+}
+
+.item-programms__content {
+  border: none;
 }
 
 .item-programms {
@@ -610,6 +616,61 @@ html {
   align-items: end;
   justify-content: end;
   align-self: flex-end;
+}
+
+.others-sub-menu {
+  width: 275px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  z-index: 10;
+  top: -70px;
+  right: 170px;
+  background-color: #FFF;
+  padding: 31px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.06), 0px 0px 0px 1px rgba(0, 0, 0, 0.04) inset;
+  display: none;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu__list > li:hover .sub-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sub-menu__list {
+  display: none;
+  position: absolute;
+  width: 315px;
+  top: 0;
+  left: 0;
+  top: -100px;
+  left: -290px;
+  color: #FFF;
+  padding: 12px;
+  z-index: 10;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.sub-menu__list li {
+  padding: 32px 32px;
+  background-color: #FFF;
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.06), 0px 0px 0px 1px rgba(0, 0, 0, 0.04) inset;
+  border-radius: 5px;
+}
+
+.sub-menu__link {
+  display: block;
+  color: #000;
+  margin-bottom: 5px;
 }
 
 @media (max-width: 991.98px) {
