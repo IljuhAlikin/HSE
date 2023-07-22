@@ -343,7 +343,7 @@ html {
   justify-content: space-between;
   gap: 18px;
   overflow-x: auto;
-  padding-bottom: 49px;
+  padding-bottom: 20px;
 }
 
 .item-programms__content::-webkit-scrollbar {
@@ -675,6 +675,18 @@ html {
 
 .table__data a {
   color: #2F2F2F;
+}
+
+@media (max-width: 1417.98px) {
+  .table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: -moz-fit-content;
+    height: fit-content;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
 }
 
 @media (max-width: 991.98px) {
